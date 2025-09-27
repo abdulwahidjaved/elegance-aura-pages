@@ -12,6 +12,8 @@ interface ProductCardProps {
   rating: number;
   reviews: number;
   scent: string;
+  description: string;
+  features: string[];
   index: number;
 }
 
@@ -24,6 +26,8 @@ export function ProductCard({
   rating, 
   reviews, 
   scent, 
+  description,
+  features,
   index 
 }: ProductCardProps) {
   const [isFavorite, setIsFavorite] = useState(false);
@@ -65,8 +69,7 @@ export function ProductCard({
             >
               <Button 
                 size="sm" 
-                variant="secondary"
-                className="bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30"
+                className="bg-gradient-luxury text-primary-foreground hover:bg-gradient-luxury/90 font-semibold shadow-lg"
               >
                 <ShoppingCart className="h-4 w-4 mr-2" />
                 Add to Cart
@@ -114,22 +117,46 @@ export function ProductCard({
             {name}
           </h3>
           
-          <p className="text-sm text-muted-foreground mb-4 flex-1">
+          <p className="text-sm text-muted-foreground mb-2">
             {scent}
           </p>
 
-          <div className="flex items-center justify-between">
+          {/* Detailed Description */}
+          <div className="mb-4 space-y-2">
+            <p className="text-sm text-foreground/80 leading-relaxed">
+              {description}
+            </p>
+            <ul className="text-xs text-muted-foreground space-y-1">
+              {features.map((feature, idx) => (
+                <li key={idx} className="flex items-center">
+                  <span className="w-1 h-1 bg-accent rounded-full mr-2"></span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
               <span className="text-2xl font-bold text-accent">
-                ${price}
+                ₹{price}
               </span>
               {originalPrice && (
                 <span className="text-lg text-muted-foreground line-through">
-                  ${originalPrice}
+                  ₹{originalPrice}
                 </span>
               )}
             </div>
           </div>
+
+          {/* Prominent Add to Cart Button */}
+          <Button 
+            className="w-full bg-gradient-luxury text-primary-foreground hover:bg-gradient-luxury/90 font-semibold py-3 shadow-lg hover-glow"
+            size="lg"
+          >
+            <ShoppingCart className="h-5 w-5 mr-2" />
+            Add to Cart - ₹{price}
+          </Button>
         </div>
 
         {/* Hover Glow Effect */}

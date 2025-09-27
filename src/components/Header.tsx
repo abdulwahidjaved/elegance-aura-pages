@@ -31,7 +31,7 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {["Home", "Products", "Collections", "About", "Contact"].map((item) => (
+          {["Products", "Collections"].map((item) => (
             <motion.a
               key={item}
               href="#"
@@ -114,7 +114,7 @@ export function Header() {
               </div>
               
               <nav className="flex flex-col space-y-2">
-                {["Home", "Products", "Collections", "About", "Contact"].map((item) => (
+                {["Products", "Collections"].map((item) => (
                   <a
                     key={item}
                     href="#"

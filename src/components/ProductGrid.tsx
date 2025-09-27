@@ -217,13 +217,13 @@ export function ProductGrid() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button 
+          {/* <Button 
             size="lg"
             variant="outline"
             className="px-8 py-6 text-lg font-semibold luxury-card border-accent hover-glow"
           >
             Load More Products
-          </Button>
+          </Button> */}
         </motion.div>
       </div>
     </section>

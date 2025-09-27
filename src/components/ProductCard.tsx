@@ -67,13 +67,13 @@ export function ProductCard({
               transition={{ duration: 0.3, delay: 0.1 }}
               className="flex gap-2"
             >
-              <Button 
+              {/* <Button 
                 size="sm" 
                 className="bg-gradient-luxury text-primary-foreground hover:bg-gradient-luxury/90 font-semibold shadow-lg"
               >
                 <ShoppingCart className="h-4 w-4 mr-2" />
                 Add to Cart
-              </Button>
+              </Button> */}
               <Button
                 size="sm"
                 variant="ghost"
@@ -150,13 +150,13 @@ export function ProductCard({
           </div>
 
           {/* Prominent Add to Cart Button */}
-          <Button 
+          {/* <Button 
             className="w-full bg-gradient-luxury text-primary-foreground hover:bg-gradient-luxury/90 font-semibold py-3 shadow-lg hover-glow"
             size="lg"
           >
             <ShoppingCart className="h-5 w-5 mr-2" />
             Add to Cart - ₹{price}
-          </Button>
+          </Button> */}
         </div>
 
         {/* Hover Glow Effect */}

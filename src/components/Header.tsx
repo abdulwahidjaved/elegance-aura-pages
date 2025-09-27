@@ -31,7 +31,7 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {["Products", "Collections"].map((item) => (
+          {["Products"].map((item) => (
             <motion.a
               key={item}
               href="#"
@@ -46,7 +46,7 @@ export function Header() {
 
         {/* Search Bar */}
         <div className="hidden md:flex items-center space-x-4">
-          <div className="relative">
+          {/* <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
             <Input
               type="text"
@@ -55,7 +55,7 @@ export function Header() {
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-10 w-64 luxury-card border-0"
             />
-          </div>
+          </div> */}
           
           <Button
             variant="ghost"
@@ -81,13 +81,13 @@ export function Header() {
             <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           </Button>
           
-          <Button
+          {/* <Button
             variant="ghost"
             size="icon"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </Button>
+          </Button> */}
         </div>
       </div>
 

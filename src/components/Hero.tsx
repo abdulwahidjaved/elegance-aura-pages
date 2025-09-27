@@ -50,19 +50,19 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <Button 
+            {/* <Button 
               size="lg" 
               className="bg-gradient-luxury text-primary-foreground hover-glow px-8 py-6 text-lg font-semibold"
             >
               Explore Collection
-            </Button>
-            <Button 
+            </Button> */}
+            {/* <Button 
               variant="outline" 
               size="lg"
               className="px-8 py-6 text-lg font-semibold luxury-card border-accent hover-glow"
             >
               Learn More
-            </Button>
+            </Button> */}
           </motion.div>
         </motion.div>
       </div>

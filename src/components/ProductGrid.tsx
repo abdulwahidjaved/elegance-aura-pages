@@ -4,7 +4,7 @@ import { ProductCard } from "./ProductCard";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Filter, Grid, List } from "lucide-react";
-import perfume1 from "@/assets/perfume-1.jpg";
+import perfume1 from "@/assets/perfume-4.png";
 import perfume2 from "@/assets/perfume-2.jpg";
 import perfume3 from "@/assets/perfume-3.jpg";
 

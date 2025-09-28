@@ -31,15 +31,18 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {["Products"].map((item) => (
+          {[
+            { name: "Products", href: "/" },
+            { name: "Contact", href: "/contact" }
+          ].map((item) => (
             <motion.a
-              key={item}
-              href="#"
+              key={item.name}
+              href={item.href}
               className="text-foreground/80 hover:text-foreground transition-colors"
               whileHover={{ y: -2 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
-              {item}
+              {item.name}
             </motion.a>
           ))}
         </nav>

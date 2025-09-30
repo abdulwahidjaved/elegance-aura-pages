@@ -11,7 +11,10 @@ import perfume4 from "@/assets/Creed_Aventus_final.png";
 import perfume5 from "@/assets/Good_Girl_final.png";
 import perfume6 from "@/assets/Gucci_Flora_final.png";
 import perfume7 from "@/assets/Most_Wanted_final.png";
-import perfume8 from "@/assets/perfume-3.jpg";
+import perfume8 from "@/assets/Savuage_final.png";
+import perfume9 from "@/assets/Tam_Dao_final.png";
+import perfume10 from "@/assets/Titanium_final.png";
+import perfume11 from "@/assets/Tycan_Leather_final.png";
 
 const products = [
   {
@@ -109,9 +112,49 @@ const products = [
   },
   {
     id: "8",
-    name: "Most_Wanted",
+    name: "Sauvage",
     price: 4800,
-    image: perfume7,
+    image: perfume8,
+    rating: 4.6,
+    reviews: 421,
+    scent: "Crisp ocean air with mint and light floral touches",
+    description: "Revitalize your senses with Fresh Breeze, an invigorating fragrance that captures the essence of a seaside morning. This refreshing blend combines crisp ocean air with cooling mint and delicate floral notes for an energizing experience.",
+    features: ["Refreshing aquatic scent", "4-6 hours freshness", "Travel-friendly size", "Perfect for warm weather"],
+    category: "casual",
+    brand: "Elegance"
+  },
+  {
+    id: "9",
+    name: "Tam Dao",
+    price: 4800,
+    image: perfume9,
+    rating: 4.6,
+    reviews: 421,
+    scent: "Crisp ocean air with mint and light floral touches",
+    description: "Revitalize your senses with Fresh Breeze, an invigorating fragrance that captures the essence of a seaside morning. This refreshing blend combines crisp ocean air with cooling mint and delicate floral notes for an energizing experience.",
+    features: ["Refreshing aquatic scent", "4-6 hours freshness", "Travel-friendly size", "Perfect for warm weather"],
+    category: "casual",
+    brand: "Elegance"
+  },
+  {
+    id: "10",
+    name: "Titanium",
+    price: 4800,
+    image: perfume10,
+    rating: 4.6,
+    reviews: 421,
+    scent: "Crisp ocean air with mint and light floral touches",
+    description: "Revitalize your senses with Fresh Breeze, an invigorating fragrance that captures the essence of a seaside morning. This refreshing blend combines crisp ocean air with cooling mint and delicate floral notes for an energizing experience.",
+    features: ["Refreshing aquatic scent", "4-6 hours freshness", "Travel-friendly size", "Perfect for warm weather"],
+    category: "casual",
+    brand: "Elegance"
+  },
+
+  {
+    id: "11",
+    name: "Tycan Leather",
+    price: 4800,
+    image: perfume11,
     rating: 4.6,
     reviews: 421,
     scent: "Crisp ocean air with mint and light floral touches",

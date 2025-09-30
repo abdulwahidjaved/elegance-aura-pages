@@ -44,7 +44,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold bg-gradient-luxury bg-clip-text text-transparent mb-6"
+            className="text-4xl md:text-6xl font-bold bg-gradient-luxury bg-clip-text text-white mb-6"
           >
             Get in Touch
           </motion.h1>

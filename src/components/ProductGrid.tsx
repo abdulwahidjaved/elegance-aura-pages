@@ -4,14 +4,19 @@ import { ProductCard } from "./ProductCard";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Filter, Grid, List } from "lucide-react";
-import perfume1 from "@/assets/perfume-4.png";
-import perfume2 from "@/assets/perfume-2.jpg";
-import perfume3 from "@/assets/perfume-3.jpg";
+import perfume1 from "@/assets/Black_OPM_final.png";
+import perfume2 from "@/assets/Bomshell_final.png";
+import perfume3 from "@/assets/CR_7_final.png";
+import perfume4 from "@/assets/Creed_Aventus_final.png";
+import perfume5 from "@/assets/Good_Girl_final.png";
+import perfume6 from "@/assets/Gucci_Flora_final.png";
+import perfume7 from "@/assets/Most_Wanted_final.png";
+import perfume8 from "@/assets/perfume-3.jpg";
 
 const products = [
   {
     id: "1",
-    name: "Midnight Elegance",
+    name: "Black OPM",
     price: 6500,
     originalPrice: 8500,
     image: perfume1,
@@ -25,7 +30,7 @@ const products = [
   },
   {
     id: "2",
-    name: "Golden Aurora",
+    name: "Bomshell",
     price: 7200,
     image: perfume2,
     rating: 4.9,
@@ -38,7 +43,7 @@ const products = [
   },
   {
     id: "3",
-    name: "Urban Noir",
+    name: "CR-7 Limited Edition",
     price: 5500,
     originalPrice: 7000,
     image: perfume3,
@@ -52,9 +57,9 @@ const products = [
   },
   {
     id: "4",
-    name: "Silk Whisper",
+    name: "Creed Aventus",
     price: 8000,
-    image: perfume1,
+    image: perfume4,
     rating: 4.9,
     reviews: 298,
     scent: "Delicate white florals with powdery musk undertones",
@@ -65,9 +70,9 @@ const products = [
   },
   {
     id: "5",
-    name: "Royal Oud",
+    name: "Good Girl",
     price: 12000,
-    image: perfume2,
+    image: perfume5,
     rating: 5.0,
     reviews: 67,
     scent: "Rare oud wood blended with saffron and precious spices",
@@ -78,9 +83,35 @@ const products = [
   },
   {
     id: "6",
-    name: "Fresh Breeze",
+    name: "Gucci Flora",
     price: 4800,
-    image: perfume3,
+    image: perfume6,
+    rating: 4.6,
+    reviews: 421,
+    scent: "Crisp ocean air with mint and light floral touches",
+    description: "Revitalize your senses with Fresh Breeze, an invigorating fragrance that captures the essence of a seaside morning. This refreshing blend combines crisp ocean air with cooling mint and delicate floral notes for an energizing experience.",
+    features: ["Refreshing aquatic scent", "4-6 hours freshness", "Travel-friendly size", "Perfect for warm weather"],
+    category: "casual",
+    brand: "Elegance"
+  },
+  {
+    id: "7",
+    name: "Most Wanted",
+    price: 4800,
+    image: perfume7,
+    rating: 4.6,
+    reviews: 421,
+    scent: "Crisp ocean air with mint and light floral touches",
+    description: "Revitalize your senses with Fresh Breeze, an invigorating fragrance that captures the essence of a seaside morning. This refreshing blend combines crisp ocean air with cooling mint and delicate floral notes for an energizing experience.",
+    features: ["Refreshing aquatic scent", "4-6 hours freshness", "Travel-friendly size", "Perfect for warm weather"],
+    category: "casual",
+    brand: "Elegance"
+  },
+  {
+    id: "8",
+    name: "Most_Wanted",
+    price: 4800,
+    image: perfume7,
     rating: 4.6,
     reviews: 421,
     scent: "Crisp ocean air with mint and light floral touches",

@@ -61,13 +61,13 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center space-x-2">
-          {/* <Button
+          <Button
             variant="ghost"
             size="icon"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </Button> */}
+          </Button>
         </div>
       </div>
 
@@ -94,7 +94,7 @@ export function Header() {
               </div>
               
               <nav className="flex flex-col space-y-2">
-                {["Products", "Collections"].map((item) => (
+                {["Products"].map((item) => (
                   <a
                     key={item}
                     href="#"

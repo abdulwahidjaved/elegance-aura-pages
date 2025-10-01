@@ -38,13 +38,13 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-20 sm:pt-32 pb-8 sm:pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold bg-gradient-luxury bg-clip-text text-white mb-6"
+            className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 sm:mb-6"
           >
             Get in Touch
           </motion.h1>
@@ -53,7 +53,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+            className="text-base sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
             We'd love to hear from you. Reach out through any of these channels for personalized fragrance consultations and support.
           </motion.p>
@@ -61,9 +61,9 @@ const Contact = () => {
       </section>
 
       {/* Contact Methods */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {contactMethods.map((method, index) => (
               <motion.div
                 key={method.title}
@@ -109,7 +109,7 @@ const Contact = () => {
       </section>
 
       {/* Additional Info Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
+      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-accent/5 to-primary/5">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
